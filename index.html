@@ -27,6 +27,15 @@
           chatEnabled: true,
           screenShareEnabled: true,
 
+          //   leftScreen
+          leftScreen: {
+            // actionButton: {
+            //   label: 'Video SDK',
+            //   href: 'https://videosdk.live/',
+            // },
+            rejoinButtonEnabled: true,
+          },
+
           //  join screen
           joinScreen: {
             visible: true,
@@ -34,12 +43,12 @@
             meetingUrl: 'customURL.com',
           },
           //   layout
-
           layout: {
             type: 'SIDEBAR', // "SPOTLIGHT" | "SIDEBAR" | "GRID"
             priority: 'PIN', // "SPEAKER" | "PIN",
             gridSize: 3,
           },
+
           //   recording
           recording: {
             enabled: true,
@@ -49,7 +58,6 @@
           },
 
           //   live stream
-
           livestream: {
             autoStart: true,
             enabled: true,
@@ -66,6 +74,7 @@
             toggleParticipantMic: true,
             toggleParticipantScreenshare: true,
             removeParticipant: true,
+            endMeeting: true,
           },
         };
 
