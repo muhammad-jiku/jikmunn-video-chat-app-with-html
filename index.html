@@ -8,7 +8,7 @@
   </head>
   <body>
     <script>
-      var script = document.createElement('script');
+      let script = document.createElement('script');
       script.type = 'text/javascript';
 
       script.addEventListener('load', function (event) {
@@ -27,11 +27,12 @@
           chatEnabled: true,
           screenShareEnabled: true,
 
-          /*
-
-     Other Feature Properties
-      
-      */
+          //  join screen
+          joinScreen: {
+            visible: true,
+            title: 'Daily scrum',
+            meetingUrl: 'customURL.com',
+          },
         };
 
         const meeting = new VideoSDKMeeting();
