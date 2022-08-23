@@ -23,7 +23,7 @@
           webcamEnabled: true,
           participantCanToggleSelfWebcam: true,
           participantCanToggleSelfMic: true,
-
+          raiseHandEnabled: true,
           chatEnabled: true,
           screenShareEnabled: true,
 
@@ -33,9 +33,32 @@
             title: 'Daily scrum',
             meetingUrl: 'customURL.com',
           },
-          //   pin participant
+          //   recording
+          //   recording: {
+          //     enabled: true,
+          //     webhookUrl: 'https://www.videosdk.live/callback',
+          //     awsDirPath: `/meeting-recordings/${meetingId}/`,
+          //     autoStart: false,
+
+          //     layout: {
+          //       type: 'SIDEBAR', // "SPOTLIGHT" | "SIDEBAR" | "GRID"
+          //       priority: 'PIN', // "SPEAKER" | "PIN",
+          //       gridSize: 3,
+          //     },
+          //   },
+
+          //   live stream
+
+          livestream: {
+            autoStart: true,
+            enabled: true,
+          },
+
+          //   permissions
           permissions: {
             pin: true,
+            // toggleRecording: true,
+            toggleLivestream: true,
           },
         };
 
