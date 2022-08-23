@@ -33,18 +33,19 @@
             title: 'Your Meeting',
             meetingUrl: 'customURL.com',
           },
+          //   layout
+
+          layout: {
+            type: 'SIDEBAR', // "SPOTLIGHT" | "SIDEBAR" | "GRID"
+            priority: 'PIN', // "SPEAKER" | "PIN",
+            gridSize: 3,
+          },
           //   recording
           recording: {
             enabled: true,
             webhookUrl: 'https://www.videosdk.live/callback',
             //   awsDirPath: `/meeting-recordings/${meetingId}/`,
-            autoStart: true,
-
-            layout: {
-              type: 'SIDEBAR', // "SPOTLIGHT" | "SIDEBAR" | "GRID"
-              priority: 'PIN', // "SPEAKER" | "PIN",
-              gridSize: 3,
-            },
+            autoStart: false,
           },
 
           //   live stream
@@ -59,6 +60,11 @@
             pin: true,
             toggleRecording: true,
             toggleLivestream: true,
+            changeLayout: true,
+            // askToJoin: true,
+            toggleParticipantWebcam: true,
+            toggleParticipantMic: true,
+            toggleParticipantScreenshare: true,
           },
         };
 
