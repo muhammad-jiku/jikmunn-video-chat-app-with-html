@@ -30,22 +30,22 @@
           //  join screen
           joinScreen: {
             visible: true,
-            title: 'Daily scrum',
+            title: 'Your Meeting',
             meetingUrl: 'customURL.com',
           },
           //   recording
-          //   recording: {
-          //     enabled: true,
-          //     webhookUrl: 'https://www.videosdk.live/callback',
-          //     awsDirPath: `/meeting-recordings/${meetingId}/`,
-          //     autoStart: false,
+          recording: {
+            enabled: true,
+            webhookUrl: 'https://www.videosdk.live/callback',
+            //   awsDirPath: `/meeting-recordings/${meetingId}/`,
+            autoStart: true,
 
-          //     layout: {
-          //       type: 'SIDEBAR', // "SPOTLIGHT" | "SIDEBAR" | "GRID"
-          //       priority: 'PIN', // "SPEAKER" | "PIN",
-          //       gridSize: 3,
-          //     },
-          //   },
+            layout: {
+              type: 'SIDEBAR', // "SPOTLIGHT" | "SIDEBAR" | "GRID"
+              priority: 'PIN', // "SPEAKER" | "PIN",
+              gridSize: 3,
+            },
+          },
 
           //   live stream
 
@@ -57,7 +57,7 @@
           //   permissions
           permissions: {
             pin: true,
-            // toggleRecording: true,
+            toggleRecording: true,
             toggleLivestream: true,
           },
         };
